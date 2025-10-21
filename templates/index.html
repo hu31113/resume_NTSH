@@ -1,18 +1,140 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
+    <meta charset="UTF-8">
     <title>讀書計畫</title>
+    <style>
+        :root {
+            --main-blue: #2196f3;
+            --main-green: #66bb6a;
+            --light-green: #f0f4c3;
+            --hover-green: #aed581;
+            --dark-green: #1b5e20;
+            --text-color: #333;
+            --bg-gradient: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: var(--main-blue);
+            color: white;
+            text-align: center;
+            padding: 50px 20px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            opacity: 0.95;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 24px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px 50px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li + li {
+            margin-top: 18px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            background-color: var(--light-green);
+            color: var(--dark-green);
+            padding: 14px 24px;
+            border-radius: 14px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        a:hover {
+            background-color: var(--hover-green);
+            color: var(--dark-green);
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 30px 25px;
+                margin: 30px 16px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            a {
+                font-size: 1em;
+                padding: 12px 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>我的讀書計畫</h1>
-    <ul>
-        <li><a href="/competition">競賽經驗</a></li>
-        <li><a href="/activities">課外活動</a></li>
-        <li><a href="/leadership">幹部經驗</a></li>
-        <li><a href="/club">社團經驗</a></li>
-        <li><a href="/electives">多元選修課程</a></li>
-        <li><a href="/ai">AI應用</a></li>
-    </ul>
+    <header>
+        <h1>我的讀書計畫</h1>
+        <p>新北高中30905 李偉博</p>
+    </header>
+
+    <main>
+        <ul>
+            <li><a href="/competition">🏆 競賽經驗</a></li>
+            <li><a href="/activities">🎭 課外活動</a></li>
+            <li><a href="/leadership">👑 幹部經驗</a></li>
+            <li><a href="/club">🎯 社團經驗</a></li>
+            <li><a href="/electives">📚 多元選修課程</a></li>
+            <li><a href="/ai">🤖 AI 應用</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        &copy; 2025 新北高中30937 陳新頤 — All rights reserved.
+    </footer>
 </body>
 </html>
